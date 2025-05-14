@@ -1,3 +1,3 @@
 **React Monster**
 
-[Continue Course](https://youtu.be/M9O5AjEFzKw?t=2972)
+[Continue Course](https://youtu.be/M9O5AjEFzKw?t=6189)

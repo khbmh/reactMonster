@@ -8,6 +8,9 @@ import ProductList from './list/ProductList';
 import UserList from './list/UserList';
 import Person from './props/Person';
 import Product from './props/Product';
+import IconCom from './styleIcon/IconCom';
+import ProfileCard from './styleIcon/ProfileCard';
+import StyleCard from './styleIcon/StyleCard';
 import Footer from './Task2/Footer';
 import Header from './Task2/Header';
 import MainContent from './Task2/MainContent';
@@ -15,12 +18,6 @@ import JsxRules from './task3/JsxRules';
 import WelcomeMsg from './task3/WelcomeMsg';
 
 function App() {
-  const cssStyles = {
-    color: 'black',
-    backgroundColor: 'crimson',
-    padding: '12px',
-    fontFamily: 'serif',
-  };
   return (
     <>
       {/* <Header />
@@ -46,15 +43,9 @@ function App() {
       <Weather temp={23} />
       <UserStatus isLoggedIn={true}/>
       <GreetingT timeOfTheDay={'afternoon'}/>*/}
-      <section>
-        <p style={{ color: 'black', backgroundColor: 'pink', padding: '11px' }}>
-          Inline Style
-        </p>
-        <p style={cssStyles}>Object Style</p>
-      </section>
-      <section>
-        <p className="external-style">from style file</p>
-      </section>
+      <StyleCard />
+      <ProfileCard />
+      <IconCom />
       {/* <Footer /> */}
     </>
   );
