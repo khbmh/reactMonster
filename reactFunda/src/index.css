@@ -3,7 +3,18 @@ body {
   color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
 }
-a{
+
+a {
   margin-right: 15px;
   color: skyblue;
+}
+
+ul {
+  border: 1px solid salmon;
+}
+
+.external-style {
+  background-color: maroon;
+  color: #ddd;
+  padding: 20px;
 }
