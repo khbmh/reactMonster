@@ -6,6 +6,7 @@ import Greeting from './dynamic/Greeting';
 import ProductInfo from './dynamic/ProductInfo';
 import ProductList from './list/ProductList';
 import UserList from './list/UserList';
+import Event from './listenEvent/Event';
 import Person from './props/Person';
 import Product from './props/Product';
 import IconCom from './styleIcon/IconCom';
@@ -42,10 +43,11 @@ function App() {
       </Child>
       <Weather temp={23} />
       <UserStatus isLoggedIn={true}/>
-      <GreetingT timeOfTheDay={'afternoon'}/>*/}
+      <GreetingT timeOfTheDay={'afternoon'}/>
       <StyleCard />
       <ProfileCard />
-      <IconCom />
+      <IconCom />*/}
+      <Event />
       {/* <Footer /> */}
     </>
   );
