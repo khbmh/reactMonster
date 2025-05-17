@@ -9,6 +9,7 @@ import UserList from './list/UserList';
 import Event from './listenEvent/Event';
 import Person from './props/Person';
 import Product from './props/Product';
+import StateHook from './stateHook/StateHook';
 import IconCom from './styleIcon/IconCom';
 import ProfileCard from './styleIcon/ProfileCard';
 import StyleCard from './styleIcon/StyleCard';
@@ -46,8 +47,9 @@ function App() {
       <GreetingT timeOfTheDay={'afternoon'}/>
       <StyleCard />
       <ProfileCard />
-      <IconCom />*/}
-      <Event />
+      <IconCom />
+      <Event />*/}
+      <StateHook />
       {/* <Footer /> */}
     </>
   );

@@ -14,6 +14,8 @@ const Event = () => {
 export default Event;
 
 const MovingCursor = () => {
+  const [mouseX, setMouseX] = useState(0);
+  const [mouseY, setMouseY] = useState(0);
   const [styles, setStyles] = useState({
     height: '200px',
     width: '300px',
@@ -32,20 +34,23 @@ const MovingCursor = () => {
     });
   }
   function mouseMoveHandler() {
-    console.log('Mouse position:', event.clientX, event.clientY);
     const x = event.clientX;
     const y = event.clientY;
+    setMouseX(x);
+    setMouseY(y);
     if (x > y) {
       setStyles((prev) => {
         return {
           ...prev,
           backgroundColor: 'white',
+          margin: `${x / 10}px ${y / 10}px`,
         };
       });
     } else if (y > x) {
       setStyles((prev) => ({
         ...prev,
         backgroundColor: 'blue',
+        margin: `${x / 10}px ${y / 10}px`,
       }));
     }
   }
@@ -55,7 +60,11 @@ const MovingCursor = () => {
         onMouseLeave={mouseLeaveHandler}
         onMouseMove={mouseMoveHandler}
         style={styles}
-      ></div>
+      >
+        <p style={{ padding: '15px', color: 'maroon' }}>
+          position x: {mouseX} <br /> position y: {mouseY}
+        </p>
+      </div>
     </div>
   );
 };
