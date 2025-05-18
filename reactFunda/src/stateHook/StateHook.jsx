@@ -3,6 +3,7 @@ import Count from './Count';
 import StoreName from './StoreName';
 import TodoList from './task/TodoList';
 import Profile from './task/Profile';
+import ShoppingList from './task/ShoppingList';
 
 const StateHook = () => {
   return (
@@ -35,6 +36,8 @@ const StateHook = () => {
       <h3>Task</h3>
       <TodoList />
       <br />
+      <br />
+      <ShoppingList />
       <br />
       <Profile />
       <br />

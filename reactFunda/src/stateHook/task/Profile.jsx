@@ -1,44 +1,53 @@
 import { useState } from 'react';
 
 const Profile = () => {
-  const [user, setUser] = useState({
-    userName: 'mango lemon',
-    userAge: 22,
-  });
-  const [name, setName] = useState(null);
-  const [age, setAge] = useState(null);
-  function nameChange(e) {
-    setName(e.target.value);
-  }
-  function ageChange(e) {
-    setAge(e.target.value);
-  }
-  function handleSubmit(e) {
-    e.preventDefault();
-    setUser({
-      ...user,
-      userName: name,
-      userAge: age,
-    });
-    e.target.reset();
-  }
   return (
     <div>
-      <p>Name: {user.userName}</p>
-      <p>Age: {user.userAge}</p>
-      <form onSubmit={handleSubmit}>
-        Name:
-        <input type="text" onChange={nameChange} placeholder="Enter your age" />
-        Age:
-        <input
-          type="number"
-          onChange={ageChange}
-          placeholder="Enter your age"
-        />
-        <button>Update</button>
-      </form>
+      <Account />
     </div>
   );
 };
 
 export default Profile;
+
+const Account = () => {
+  const [user, setUser] = useState({ name: 'john man', age: 23 });
+
+  const [nameInput, setNameInput] = useState(user.name);
+  const [ageInput, setAgeInput] = useState(user.age);
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    setUser({ ...user, age: ageInput, name: nameInput });
+    e.target.reset();
+  };
+  return (
+    <div>
+      <p>Name: {nameInput || user.name}</p>
+      <p>Age: {ageInput || user.age}</p>
+      <br />
+      Name:{' '}
+      <form onSubmit={handleUpdate}>
+        <input
+          type="text"
+          placeholder="enter your name"
+          onChange={(e) => {
+            setNameInput(e.target.value);
+          }}
+        />
+        {'   '}
+        {'   '}
+        Age:{' '}
+        <input
+          type="number"
+          placeholder="enter your age"
+          onChange={(e) => {
+            setAgeInput(e.target.value);
+          }}
+        />
+        <button>Update</button>
+      </form>
+      <br />
+      <br />
+    </div>
+  );
+};

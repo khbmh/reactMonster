@@ -5,6 +5,11 @@ const TodoList = () => {
   const [todo, setTodo] = useState('');
   const handleChange = (e) => setTodo(e.target.value);
   const handleAdd = () => {
+    if(todo.trim()===''){
+      alert('empty')
+      return
+
+    }
     setTodos([...todos, todo]);
     setTodo('');
   };
