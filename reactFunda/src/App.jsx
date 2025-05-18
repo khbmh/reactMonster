@@ -23,10 +23,10 @@ import WelcomeMsg from './task3/WelcomeMsg';
 function App() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <MainContent />
       <WelcomeMsg />
-      <JsxRules /> 
+      <JsxRules />
       <Greeting />
       <ProductInfo />
       <UserList />
@@ -44,15 +44,15 @@ function App() {
         <p>This data is showing via props.children</p>
       </Child>
       <Weather temp={23} />
-      <UserStatus isLoggedIn={true}/>
-      <GreetingT timeOfTheDay={'afternoon'}/>
+      <UserStatus isLoggedIn={true} />
+      <GreetingT timeOfTheDay={'afternoon'} />
       <StyleCard />
       <ProfileCard />
       <IconCom />
       <Event />
-      <StateHook />*/}
+      <StateHook />
       <Portal />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
