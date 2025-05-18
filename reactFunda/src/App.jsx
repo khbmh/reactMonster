@@ -7,6 +7,7 @@ import ProductInfo from './dynamic/ProductInfo';
 import ProductList from './list/ProductList';
 import UserList from './list/UserList';
 import Event from './listenEvent/Event';
+import Portal from './portal/Portal';
 import Person from './props/Person';
 import Product from './props/Product';
 import StateHook from './stateHook/StateHook';
@@ -48,8 +49,9 @@ function App() {
       <StyleCard />
       <ProfileCard />
       <IconCom />
-      <Event />*/}
-      <StateHook />
+      <Event />
+      <StateHook />*/}
+      <Portal />
       {/* <Footer /> */}
     </>
   );

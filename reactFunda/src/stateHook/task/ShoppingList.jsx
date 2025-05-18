@@ -4,7 +4,6 @@ const ShoppingList = () => {
   const [list, setList] = useState([]);
   const handleForm = (e) => {
     e.preventDefault();
-    const lastItem = list.length - 1;
     const name = e.target.name.value;
     const quantity = Number(e.target.quantity.value);
     if (name.trim() === '' || quantity < 1) {
