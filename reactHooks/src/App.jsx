@@ -4,6 +4,8 @@ import PropDrill from './propsDrilling/PropDrill';
 import ContextApi from './contextApi/ContextApi';
 import UseReducer from './reducer/UseReducer';
 import Ref from './useRef/Ref';
+import Custom from './custom/Custom';
+import UseId from './useId/UseId';
 
 const App = () => {
   return (
@@ -11,8 +13,10 @@ const App = () => {
       {/* <UseEffect /> 
       <PropDrill />
       <ContextApi />
-      <UseReducer />*/}
+      <UseReducer />
       <Ref />
+      <Custom />*/}
+      <UseId />
     </main>
   );
 };
