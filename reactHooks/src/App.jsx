@@ -10,13 +10,31 @@ import UseId from './useId/UseId';
 const App = () => {
   return (
     <main>
-      {/* <UseEffect /> 
+      <header>
+        <h1>React Monster Chapter 2 - React Hooks</h1>
+        <hr />
+      </header>
+      <UseEffect />
       <PropDrill />
       <ContextApi />
       <UseReducer />
       <Ref />
-      <Custom />*/}
+      <Custom />
       <UseId />
+      <footer>
+        <br />
+        <hr />
+        <p>
+          ©️ 2025 my website{' '}
+          <a href="http://mahi-here.netlify.app" target="_blank">
+            Coded by Mahi
+          </a>
+        </p>
+        <br />
+        <a href="https://youtu.be/M9O5AjEFzKw">Taught by HuXn WebDev</a>
+        <br />
+        <br />
+      </footer>
     </main>
   );
 };
