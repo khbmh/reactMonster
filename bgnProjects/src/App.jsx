@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import One from './p1/One';
 import Ten from './p10/Ten';
 import Two from './p2/Two';
@@ -35,26 +36,28 @@ const App = () => {
         </footer>
       </section>
       <hr />
-      <ScrollTop />
-      <One />
-      <hr />
-      <Two />
-      <hr />
-      <Three />
-      <hr />
-      <Four />
-      <hr />
-      <Five />
-      <hr />
-      <Six />
-      <hr />
-      <Seven />
-      <hr />
-      <Eight />
-      <hr />
-      <Nine />
-      <hr />
-      <Ten />
+      <main>
+        <One />
+        <hr />
+        <Two />
+        <hr />
+        <ScrollTop />
+        <Three />
+        <hr />
+        <Four />
+        <hr />
+        <Five />
+        <hr />
+        <Six />
+        <hr />
+        <Seven />
+        <hr />
+        <Eight />
+        <hr />
+        <Nine />
+        <hr />
+        <Ten />
+      </main>
     </div>
   );
 };
@@ -62,9 +65,23 @@ const App = () => {
 export default App;
 
 const ScrollTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisible = () => {
+      setIsVisible(window.scrollY > window.innerHeight * 0.8);
+    };
+
+    window.addEventListener('scroll', toggleVisible);
+
+    return () => window.removeEventListener('scroll', toggleVisible);
+  }, []);
+
+  if (!isVisible) return null;
+
   return (
     <a href="#home">
-      <h1 className="--scroll-top">↑</h1>
+      <h1 className={`--scroll-top`}>↑</h1>
     </a>
   );
 };
