@@ -1,0 +1,70 @@
+import One from './p1/One';
+import Ten from './p10/Ten';
+import Two from './p2/Two';
+import Three from './p3/Three';
+import Four from './p4/Four';
+import Five from './p5/Five';
+import Six from './p6/Six';
+import Seven from './p7/Seven';
+import Eight from './p8/Eight';
+import Nine from './p9/Nine';
+
+const App = () => {
+  return (
+    <div id="home">
+      <section className="center-sec">
+        <div>
+          <h1>React Beginner Projects</h1>
+          <div className="center">
+            <a href="#one">Project one:</a>
+            <a href="#two">Project two:</a>
+            <a href="#three">Project three:</a>
+            <a href="#four">Project four:</a>
+            <a href="#five">Project five:</a>
+            <a href="#six">Project six:</a>
+            <a href="#seven">Project seven:</a>
+            <a href="#eight">Project eight:</a>
+            <a href="#nine">Project nine:</a>
+            <a href="#ten">Project ten:</a>
+          </div>
+        </div>
+        <footer>
+          <a href="http://mahi-here.netlify.app" target="_blank">
+            made by mahi
+          </a>
+        </footer>
+      </section>
+      <hr />
+      <ScrollTop />
+      <One />
+      <hr />
+      <Two />
+      <hr />
+      <Three />
+      <hr />
+      <Four />
+      <hr />
+      <Five />
+      <hr />
+      <Six />
+      <hr />
+      <Seven />
+      <hr />
+      <Eight />
+      <hr />
+      <Nine />
+      <hr />
+      <Ten />
+    </div>
+  );
+};
+
+export default App;
+
+const ScrollTop = () => {
+  return (
+    <a href="#home">
+      <h1 className="--scroll-top">↑</h1>
+    </a>
+  );
+};
