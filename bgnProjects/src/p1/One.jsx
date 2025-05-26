@@ -7,7 +7,7 @@ const One = () => {
     <div id="one">
       <section>
         <h1>1. Simple Counter</h1>
-        <div className="container">
+        <div className="container-1">
           <button
             className={`${count < 1 && 'hidden'}`}
             onClick={() => {

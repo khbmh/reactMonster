@@ -1,4 +1,4 @@
-.container {
+.container-1 {
   height: 80vh;
   width: 100%;
   display: flex;
@@ -6,21 +6,23 @@
   justify-content: space-around;
 }
 
-p {
+.container-1 p {
   font-size: 90px;
   width: 40vw;
   text-align: center;
+  border: none;
 }
 
-button {
+.container-1 button {
   padding: 30px;
   border: none;
   border-radius: 44px;
   cursor: pointer;
   position: relative;
+  background-color: #604c59;
 }
 
-span {
+.container-1 span {
   font-weight: 500;
   position: absolute;
   font-size: 30px;
@@ -29,6 +31,6 @@ span {
   transform: translate(-50%, -50%);
 }
 
-.hidden {
+.container-1 .hidden {
   visibility: hidden;
 }

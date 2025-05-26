@@ -13,13 +13,11 @@ import Nine from './p9/Nine';
 const App = () => {
   return (
     <div id="home">
-      <Two />
-      <hr />
       <Hero />
       <hr />
       <One />
-      {/* <hr />
-      <Two /> */}
+      <hr />
+      <Two />
       <hr />
       <ScrollTop />
       <Three />
