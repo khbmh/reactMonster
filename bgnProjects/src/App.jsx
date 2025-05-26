@@ -13,56 +13,62 @@ import Nine from './p9/Nine';
 const App = () => {
   return (
     <div id="home">
-      <section className="center-sec">
-        <div>
-          <h1>React Beginner Projects</h1>
-          <div className="center">
-            <a href="#one">Project one:</a>
-            <a href="#two">Project two:</a>
-            <a href="#three">Project three:</a>
-            <a href="#four">Project four:</a>
-            <a href="#five">Project five:</a>
-            <a href="#six">Project six:</a>
-            <a href="#seven">Project seven:</a>
-            <a href="#eight">Project eight:</a>
-            <a href="#nine">Project nine:</a>
-            <a href="#ten">Project ten:</a>
-          </div>
-        </div>
-        <footer>
-          <a href="http://mahi-here.netlify.app" target="_blank">
-            made by mahi
-          </a>
-        </footer>
-      </section>
+      <Two />
       <hr />
-      <main>
-        <One />
-        <hr />
-        <Two />
-        <hr />
-        <ScrollTop />
-        <Three />
-        <hr />
-        <Four />
-        <hr />
-        <Five />
-        <hr />
-        <Six />
-        <hr />
-        <Seven />
-        <hr />
-        <Eight />
-        <hr />
-        <Nine />
-        <hr />
-        <Ten />
-      </main>
+      <Hero />
+      <hr />
+      <One />
+      {/* <hr />
+      <Two /> */}
+      <hr />
+      <ScrollTop />
+      <Three />
+      <hr />
+      <Four />
+      <hr />
+      <Five />
+      <hr />
+      <Six />
+      <hr />
+      <Seven />
+      <hr />
+      <Eight />
+      <hr />
+      <Nine />
+      <hr />
+      <Ten />
     </div>
   );
 };
 
 export default App;
+
+const Hero = () => {
+  return (
+    <section className="center-sec">
+      <div>
+        <h1>React Beginner Projects</h1>
+        <div className="center">
+          <a href="#one">Project one: Simple Counter</a>
+          <a href="#two">Project two: To do list</a>
+          <a href="#three">Project three:</a>
+          <a href="#four">Project four:</a>
+          <a href="#five">Project five:</a>
+          <a href="#six">Project six:</a>
+          <a href="#seven">Project seven:</a>
+          <a href="#eight">Project eight:</a>
+          <a href="#nine">Project nine:</a>
+          <a href="#ten">Project ten:</a>
+        </div>
+      </div>
+      <footer>
+        <a href="http://mahi-here.netlify.app" target="_blank">
+          made by mahi
+        </a>
+      </footer>
+    </section>
+  );
+};
 
 const ScrollTop = () => {
   const [isVisible, setIsVisible] = useState(false);
