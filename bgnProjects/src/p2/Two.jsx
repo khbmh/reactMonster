@@ -7,6 +7,7 @@ const Two = () => {
   const [item, setItem] = useState('');
   const task = { task: item, id: generateId() };
   const handleAdd = () => {
+    if(item.trim()=== '') return
     setList((list) => [...list, task]);
     setItem('');
   };
