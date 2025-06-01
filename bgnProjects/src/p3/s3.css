@@ -1,10 +1,11 @@
 .container {
   height: fit-content;
   width: 90vw;
-  max-width: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  overflow-x: hidden;
   gap: 50px;
   justify-content: space-between;
   padding: 50px 20px;
@@ -29,7 +30,8 @@ img {
   object-fit: contain;
   margin: 0 auto;
 }
-h4{
+
+h4 {
   color: rgb(169, 169, 137);
   margin: 20px 0;
   text-transform: capitalize;
