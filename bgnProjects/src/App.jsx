@@ -13,7 +13,8 @@ import Nine from './p9/Nine';
 const App = () => {
   return (
     <div id="home">
-      <Five />
+      {/* <Six />
+      <hr /> */}
       <Hero />
       <hr />
       <One />
@@ -23,8 +24,8 @@ const App = () => {
       <Three />
       <hr />
       <Four />
-      {/* <hr />
-      <Five /> */}
+      <hr />
+      <Five />
       <hr />
       <Six />
       <hr />
@@ -53,7 +54,7 @@ const Hero = () => {
           <a href="#three">Project three: Basic Axios</a>
           <a href="#four">Project four: Calculator</a>
           <a href="#five">Project five: Theme Toggler</a>
-          <a href="#six">Project six:</a>
+          <a href="#six">Project six: Search Bar Show Hide</a>
           <a href="#seven">Project seven:</a>
           <a href="#eight">Project eight:</a>
           <a href="#nine">Project nine:</a>
