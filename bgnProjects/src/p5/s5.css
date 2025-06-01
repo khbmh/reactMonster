@@ -1,0 +1,41 @@
+.dark {
+  background: #171718;
+  color: #babab6;
+}
+
+.light {
+  background: #ffffff;
+  color: #000;
+}
+
+section {
+  transition: color .4s ease-in-out, background .2s ease-in-out;
+}
+
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
+
+.btn--dark {
+  background: #870056;
+  color: white;
+}
+
+.btn--light {
+  background: #f963c2;
+  color: rgb(21, 20, 20);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 80vh;
+  padding: 30px;
+}
