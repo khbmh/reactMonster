@@ -13,7 +13,7 @@ import Nine from './p9/Nine';
 const App = () => {
   return (
     <div id="home">
-      {/* <Nine />
+      {/* <Ten />
       <hr /> */}
       <Hero />
       <hr />
@@ -57,7 +57,7 @@ const Hero = () => {
           <a href="#six">Project six: Search Bar Show Hide</a>
           <a href="#seven">Project seven: Testimonial</a>
           <a href="#eight">Project eight: FaQ Accordion</a>
-          <a href="#nine">Project nine:</a>
+          <a href="#nine">Project nine: Form Validation</a>
           <a href="#ten">Project ten:</a>
         </div>
       </div>

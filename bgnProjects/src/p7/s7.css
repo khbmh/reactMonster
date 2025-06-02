@@ -23,7 +23,9 @@
 
   h3 {
     width: 300px;
-    max-width: 90vw;
+    max-width: 80vw;
+    padding:0 3vw;
+    font-weight: 400;
     font-style: italic;
   }
 

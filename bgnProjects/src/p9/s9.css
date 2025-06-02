@@ -1,0 +1,54 @@
+#nine {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #d72a2a; */
+    width: 80vw;
+    height: 80vh;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 15px;
+    padding: 30px 4vw;
+    border-radius: 10px;
+    background-color: #2a2929;
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px 10px 1px;
+    background: none;
+    color: white;
+    border-bottom: 2px solid saddlebrown;
+  }
+  button{
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: saddlebrown;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .good{
+    border-bottom: 2px solid rgb(0, 255, 60);
+
+  }
+  .error{
+    font-size: 12px;
+    color: #fd2d2d;
+  }
+  .hideError{
+    visibility: hidden;
+  } 
+}
